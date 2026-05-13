@@ -33,37 +33,36 @@ export default function Hero() {
 
       </div>
 
-      {/* RIGHT */}
-      <div className="relative flex justify-center items-center py-8">
+      {/* RIGHT — pr-12 gives room for the card to overflow without causing scrollbar */}
+      <div className="relative flex justify-center items-center py-8 pr-12">
 
         {/* Glow */}
         <div
           className="absolute rounded-full bg-green-500/20 blur-3xl"
-          style={{ width: 440, height: 440 }}
+          style={{ width: 420, height: 420 }}
         />
 
         {/* Plant Circle */}
         <div
-          className="relative rounded-full bg-gradient-to-b from-green-400 to-green-900 flex items-center justify-center overflow-hidden"
-          style={{ width: 420, height: 420 }}
+          className="relative rounded-full bg-gradient-to-b from-green-400 to-green-900 flex items-center justify-center overflow-hidden shrink-0"
+          style={{ width: 400, height: 400 }}
         >
           <Image
-            src="/images/plant.png"
+            src="/images/plant3.png"
             alt="Hero Plant"
-            width={400}
-            height={400}
+            fill
             priority
-            className="object-contain relative z-10"
+            className="object-contain p-8"
           />
         </div>
 
-        {/* Floating Info Card */}
+        {/* Floating Info Card — anchored to right edge, outside the circle */}
         <div
-          className="hidden lg:flex flex-col gap-3 absolute bg-white/10 backdrop-blur-xl border border-white/15 rounded-3xl p-5 shadow-2xl"
-          style={{ top: 48, right: -16, width: 195 }}
+          className="hidden lg:flex flex-col gap-3 absolute bg-white/10 backdrop-blur-xl border border-white/15 rounded-3xl p-5 shadow-2xl z-20"
+          style={{ top: 60, right: -8, width: 190 }}
         >
           <p className="text-gray-400 text-xs">Indoor Plant</p>
-          <h3 className="text-lg font-bold leading-tight">Pleomele Plant</h3>
+          <h3 className="text-lg font-bold leading-tight">Snake Plant</h3>
           <button className="bg-green-400 text-black py-2 rounded-full font-semibold text-sm hover:bg-green-300 transition w-full">
             Buy Now
           </button>
