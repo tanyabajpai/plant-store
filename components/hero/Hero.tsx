@@ -60,7 +60,7 @@ export default function Hero() {
         {/* Floating Info Card */}
         <div
           className="hidden lg:flex flex-col gap-3 absolute bg-white/10 backdrop-blur-xl border border-white/15 rounded-3xl p-5 shadow-2xl"
-          style={{ top: 48, right: 0, width: 195 }}
+          style={{ top: 48, right: -16, width: 195 }}
         >
           <p className="text-gray-400 text-xs">Indoor Plant</p>
           <h3 className="text-lg font-bold leading-tight">Pleomele Plant</h3>

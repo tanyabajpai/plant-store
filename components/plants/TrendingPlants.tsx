@@ -38,11 +38,11 @@ export default function TrendingPlants() {
         {trendingPlants.map((plant, i) => (
           <div
             key={i}
-            className="rounded-3xl border border-white/10 bg-white/5 hover:border-green-400 hover:-translate-y-2 transition duration-300 group flex flex-col overflow-hidden"
+            className="rounded-3xl border border-white/10 bg-white/5 hover:border-green-400 hover:-translate-y-2 transition duration-300 group flex flex-col"
           >
             {/* Image area */}
             <div
-              className="flex justify-center items-center bg-green-950/40 p-6"
+              className="flex justify-center items-center bg-green-950/40 p-6 rounded-t-3xl"
               style={{ height: 230 }}
             >
               <Image
@@ -59,7 +59,7 @@ export default function TrendingPlants() {
             <div className="p-5 flex flex-col flex-1">
               <h3 className="text-base font-semibold mb-2 leading-snug">{plant.name}</h3>
               <p className="text-gray-400 text-sm leading-6 flex-1">{plant.description}</p>
-              <div className="flex items-center justify-between mt-4">
+              <div className="flex items-center justify-between mt-4 pt-2">
                 <span className="text-green-400 font-bold text-base">{plant.price}</span>
                 <button className="bg-green-400 text-black px-5 py-1.5 rounded-full text-sm font-semibold hover:bg-green-300 transition">
                   Explore
